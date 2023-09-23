@@ -1,0 +1,148 @@
+/* typography */
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0.25em 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 0.5em 0;
+  color: #141414;
+}
+
+.time-text {
+  font-size: 0.75rem;
+  margin-top: 0.5em;
+}
+
+/* Layout */
+
+section {
+  padding: 0 1.5em;
+}
+
+.hero-section {
+  color: #ffffff;
+  background: black url("../images/article-image-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5em 1.5em 1em;
+}
+
+.hero-section h1,
+.hero-section p {
+  max-width: 380px;
+}
+
+.post-section {
+  margin: 2em 0;
+}
+
+.post-section-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-bottom: 1em;
+}
+
+.post-container {
+  flex: 1 374px;
+  height: 400px;
+}
+
+.post-container img {
+  height: 232px;
+}
+
+.post-container .time-text {
+  font-size: 0.9rem;
+  margin: 1em 0;
+}
+
+.post-container p {
+  color: #505050;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.btn:active,
+.btn:hover,
+.btn:focus {
+  color: brown;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: brown;
+  color: #ffffff;
+  border: 0;
+  border-radius: 0.5em;
+  padding: 1em 1.5em;
+  margin: 1em 0;
+  width: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.primary-btn:active,
+.primary-btn:hover,
+.primary-btn:focus {
+  cursor: pointer;
+  background-color: rgb(91, 41, 41);
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .time-text {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 0 3.3125em;
+  }
+
+  .hero-section {
+    color: #ffffff;
+    background: black url("../images/blog-image-hero.png");
+    padding: 18em 3.3125em 2.5em;
+  }
+
+  .hero-section h1 {
+    max-width: 700px;
+  }
+
+  .hero-section p {
+    max-width: 614px;
+  }
+
+  .post-section {
+    margin: 2.5em 0;
+  }
+
+  .post-container {
+    flex: 1 309px;
+    height: 393px;
+  }
+}

@@ -1,0 +1,56 @@
+/* typography */
+
+h2 {
+  font-size: 2rem;
+  margin: 0.5em 0;
+  font-weight: 700;
+  color: #151515;
+}
+
+p {
+  margin: 1em 0;
+}
+
+.time-text {
+  font-size: 0.75rem;
+}
+
+/* Layout */
+
+main {
+  background-color: #fafafa;
+  padding: 2em;
+}
+
+.post-article img {
+  margin: 1em 0;
+}
+
+.post-article p {
+  max-width: 474px;
+}
+
+@media (min-width: 700px) {
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  .time-text {
+    font-size: 1rem;
+  }
+
+  .post-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post-article img {
+    max-width: 979px;
+  }
+
+  .post-article p {
+    max-width: 844px;
+  }
+}

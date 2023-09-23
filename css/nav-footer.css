@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+}
+
+/* typography */
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+/* Images */
+img {
+  width: 100%;
+}
+
+/* Layout */
+
+/* Header */
+header {
+  display: flex;
+  color: #0e0e0e;
+  padding: 1em 2em;
+  align-items: center;
+  gap: 0.5em;
+}
+
+header img {
+  width: 23.16px;
+  height: 23.16px;
+}
+
+.header-title {
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+li a {
+  text-decoration: none;
+  color: #090909;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+li a:focus,
+li a:hover {
+  color: brown;
+}
+
+li a:active {
+  color: rgb(93, 64, 64);
+}
+
+/* Footer */
+footer {
+  background-color: #202020;
+  text-align: center;
+  padding: 3em 0;
+  font-size: 0.75rem;
+}
+
+footer p:nth-child(1) {
+  color: #ececec;
+  font-weight: bold;
+}
+
+footer p:nth-child(2) {
+  color: #d7d7d7;
+}
+
+/* Mobile Nav Bar */
+@media (max-width: 700px) {
+  .hamburgur {
+    margin-left: auto;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+  }
+
+  .hamburgur:hover,
+  .hamburgur:active,
+  .hamburgur:focus {
+    outline: 1px solid brown;
+  }
+
+  .line {
+    width: 30px;
+    height: 5px;
+    background: #090909;
+    margin: 5px;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.6s ease;
+    background-color: #ffffff;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .close-menu #line-one {
+    transform: translateY(9px) rotateZ(-45deg);
+  }
+
+  .close-menu #line-two {
+    opacity: 0;
+  }
+
+  .close-menu #line-three {
+    transform: translateY(-9px) rotateZ(45deg);
+  }
+
+  .show-menu {
+    display: block;
+    top: 60px;
+  }
+}
+
+@media (min-width: 700px) {
+  header {
+    padding: 1.5em 3.3125em;
+  }
+
+  header img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .header-title {
+    font-size: 1.25rem;
+  }
+
+  nav {
+    margin-left: auto;
+  }
+}
